@@ -47,8 +47,8 @@ const GaugeChart = ({
             cy="70%"
             startAngle={180}
             endAngle={0}
-            innerRadius="70%"
-            outerRadius="80%"
+            innerRadius="49%" // Reduced from 70% (30% smaller)
+            outerRadius="56%" // Reduced from 80% (30% smaller)
             paddingAngle={0}
             dataKey="value"
             stroke="none"
@@ -63,7 +63,7 @@ const GaugeChart = ({
                   <>
                     <text 
                       x={cx} 
-                      y={cy-10} 
+                      y={cy-50} // Moved up 40px 
                       textAnchor="middle" 
                       dominantBaseline="central"
                       className="fill-foreground font-bold text-3xl"
@@ -75,42 +75,6 @@ const GaugeChart = ({
               }}
             />
           </Pie>
-          {/* Add scale markers for 1 through 10 */}
-          {Array.from({ length: max - min + 1 }).map((_, i) => {
-            const value = min + i;
-            const angle = -180 + (180 * (value - min)) / (max - min);
-            const radian = (angle * Math.PI) / 180;
-            const x1 = 50 + 83 * Math.cos(radian);
-            const y1 = 70 + 83 * Math.sin(radian);
-            const x2 = 50 + 87 * Math.cos(radian);
-            const y2 = 70 + 87 * Math.sin(radian);
-            
-            const labelX = 50 + 95 * Math.cos(radian);
-            const labelY = 70 + 95 * Math.sin(radian);
-            
-            return (
-              <g key={`marker-${value}`}>
-                <line
-                  x1={`${x1}%`}
-                  y1={`${y1}%`}
-                  x2={`${x2}%`}
-                  y2={`${y2}%`}
-                  stroke="#94a3b8"
-                  strokeWidth={2}
-                />
-                <text
-                  x={`${labelX}%`}
-                  y={`${labelY}%`}
-                  textAnchor="middle"
-                  dominantBaseline="central"
-                  fontSize="10"
-                  fill="#64748b"
-                >
-                  {value}
-                </text>
-              </g>
-            );
-          })}
         </PieChart>
       </ResponsiveContainer>
     </div>
