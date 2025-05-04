@@ -23,7 +23,7 @@ const ChartCard: React.FC<ChartCardProps> = ({
   color,
 }) => {
   return (
-    <Card className="rounded-xl bg-[#252525] p-4 w-full border-0 border-none h-[320px] flex flex-col">
+    <Card className="rounded-xl bg-[#252525] p-4 w-full border-0 border-none h-[280px] flex flex-col">
       <div className="flex flex-col items-center flex-1">
         <h3 className="text-[20px] font-normal text-foreground h-[22px] flex items-center w-full justify-center">{title}</h3>
         <p className="text-[14px] font-normal text-muted-foreground mb-0 text-center h-[40px] flex items-center w-full justify-center">{subtitle}</p>
