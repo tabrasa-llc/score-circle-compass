@@ -63,30 +63,12 @@ const GaugeChart = ({
                   <>
                     <text 
                       x={cx} 
-                      y={cy - 20} 
-                      textAnchor="middle" 
-                      dominantBaseline="central"
-                      className="fill-muted-foreground text-sm"
-                    >
-                      Score
-                    </text>
-                    <text 
-                      x={cx} 
                       y={cy + 10} 
                       textAnchor="middle" 
                       dominantBaseline="central"
                       className="fill-foreground font-bold text-3xl"
                     >
                       {safeValue.toFixed(1)}
-                    </text>
-                    <text 
-                      x={cx} 
-                      y={cy + 40} 
-                      textAnchor="middle" 
-                      dominantBaseline="central"
-                      className="fill-muted-foreground text-xs"
-                    >
-                      Scale: {min} - {max}
                     </text>
                   </>
                 );
