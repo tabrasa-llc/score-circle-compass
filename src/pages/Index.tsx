@@ -11,7 +11,7 @@ const Index = () => {
             <CardTitle className="text-foreground">Character</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-row gap-6 overflow-x-auto">
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
