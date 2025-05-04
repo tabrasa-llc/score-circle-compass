@@ -57,10 +57,10 @@ const Index = ({
           </CardContent>
         </Card>
 
-        {/* New Education card */}
+        {/* Education card */}
         <Card className="bg-card text-foreground border-0">
           <CardHeader className="pb-2">
-            <CardTitle className="text-[14px] leading-[18px] text-purple-500">
+            <CardTitle className="text-[14px] leading-[18px] text-purple-400">
               Education
             </CardTitle>
             <p className="text-[24px] leading-[26px] font-normal text-white mt-3 mb-6">
@@ -74,21 +74,21 @@ const Index = ({
                 subtitle="Quality of daycare facilities"
                 score={7.5}
                 scoreDefinition="Several good options available nearby"
-                color="#8b5cf6" /* purple-500 */
+                color="#a78bfa" /* purple-400 */
               />
               <ChartCard
                 title="Elementary School"
                 subtitle="Quality of elementary education"
                 score={8.2}
                 scoreDefinition="Highly rated schools in the district"
-                color="#8b5cf6" /* purple-500 */
+                color="#a78bfa" /* purple-400 */
               />
               <ChartCard
                 title="High School"
                 subtitle="Quality of high school education"
                 score={6.8}
                 scoreDefinition="Good academic and extracurricular programs"
-                color="#8b5cf6" /* purple-500 */
+                color="#a78bfa" /* purple-400 */
               />
             </div>
           </CardContent>
