@@ -33,7 +33,9 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <Separator orientation="vertical" className="h-[50%] self-center bg-[#6F6F6F] w-[1px]" />
+              <div className="flex items-center h-full">
+                <div className="h-1/2 w-[1px] bg-[#6F6F6F]"></div>
+              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -41,7 +43,9 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <Separator orientation="vertical" className="h-[50%] self-center bg-[#6F6F6F] w-[1px]" />
+              <div className="flex items-center h-full">
+                <div className="h-1/2 w-[1px] bg-[#6F6F6F]"></div>
+              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -49,7 +53,9 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <Separator orientation="vertical" className="h-[50%] self-center bg-[#6F6F6F] w-[1px]" />
+              <div className="flex items-center h-full">
+                <div className="h-1/2 w-[1px] bg-[#6F6F6F]"></div>
+              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
