@@ -33,6 +33,9 @@ const GaugeChart = ({
   // Colors for the gauge segments
   const colors = [color, "#393939"];
 
+  // Calculate the angle for the marker at the end of the colored arc
+  const markerAngle = 180 - (percentage / 100) * 180;
+
   return (
     <div className={cn("w-full h-[130px] relative rounded-lg overflow-hidden", className)}>
       <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
@@ -60,9 +63,6 @@ const GaugeChart = ({
               <Cell 
                 key={`cell-${index}`} 
                 fill={index === 0 ? "url(#gaugeGradient)" : colors[index]} 
-                // Add a white stroke only to the filled part of the gauge
-                stroke={index === 0 ? "#FFFFFF" : "none"}
-                strokeWidth={index === 0 ? 2 : 0}
               />
             ))}
             <Label
@@ -84,6 +84,18 @@ const GaugeChart = ({
               }}
             />
           </Pie>
+          {/* Add marker line at the end of the colored arc */}
+          {percentage > 0 && percentage < 100 && (
+            <line
+              x1={50}
+              y1={75}
+              x2={50 + 50 * Math.cos((markerAngle * Math.PI) / 180)}
+              y2={75 + 50 * Math.sin((markerAngle * Math.PI) / 180)}
+              stroke="#FFFFFF"
+              strokeWidth={2}
+              className="absolute"
+            />
+          )}
         </PieChart>
       </ResponsiveContainer>
     </div>
