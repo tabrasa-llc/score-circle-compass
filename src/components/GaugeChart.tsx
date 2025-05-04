@@ -33,6 +33,14 @@ const GaugeChart = ({
   // Colors for the gauge segments
   const colors = [color, "#393939"];
 
+  // Calculate the angle for the needle
+  const needleAngle = 180 - (percentage / 100) * 180;
+  
+  // Calculate the needle coordinates
+  const needleLength = 50; // Length of needle from center
+  const needleX = 50 + needleLength * Math.cos((needleAngle * Math.PI) / 180);
+  const needleY = 75 + needleLength * Math.sin((needleAngle * Math.PI) / 180);
+
   return (
     <div className={cn("w-full h-[130px] relative rounded-lg overflow-hidden", className)}>
       <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
@@ -76,6 +84,22 @@ const GaugeChart = ({
                     >
                       {safeValue.toFixed(1)}
                     </text>
+                    {/* Add needle line */}
+                    <line
+                      x1={cx}
+                      y1={cy}
+                      x2={needleX}
+                      y2={needleY}
+                      stroke="#ffffff"
+                      strokeWidth={2}
+                    />
+                    {/* Add a small circle at the needle base */}
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={3}
+                      fill="#ffffff"
+                    />
                   </>
                 );
               }}
