@@ -32,9 +32,6 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <div className="flex items-center h-full">
-                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
-              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -42,9 +39,6 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <div className="flex items-center h-full">
-                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
-              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -52,9 +46,6 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
-              <div className="flex items-center h-full">
-                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
-              </div>
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
