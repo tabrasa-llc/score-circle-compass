@@ -32,7 +32,7 @@ const GaugeChart = ({
   const colors = ["url(#gaugeGradient)", "#e2e8f0"];
 
   return (
-    <div className={cn("w-full h-[140px] relative rounded-lg overflow-hidden", className)}>
+    <div className={cn("w-full h-[100px] relative rounded-lg overflow-hidden", className)}>
       <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
         <PieChart>
           <defs>
