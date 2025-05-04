@@ -32,8 +32,8 @@ const GaugeChart = ({
   const colors = ["url(#gaugeGradient)", "#e2e8f0"];
 
   return (
-    <div className={cn("w-full h-[300px] relative", className)}>
-      <ResponsiveContainer width="100%" height="100%">
+    <div className={cn("w-full h-[300px] relative rounded-lg overflow-hidden", className)}>
+      <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
         <PieChart>
           <defs>
             <linearGradient id="gaugeGradient" x1="0" y1="0" x2="0" y2="1">
@@ -52,6 +52,7 @@ const GaugeChart = ({
             paddingAngle={0}
             dataKey="value"
             stroke="none"
+            cornerRadius={10}
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index]} />
