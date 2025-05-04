@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ChartCard from "@/components/ChartCard";
+import { Separator } from "@/components/ui/separator";
 
 interface IndexProps {
   title?: string;
@@ -24,7 +25,7 @@ const Index = ({
             </p>
           </CardHeader>
           <CardContent className="pt-6">
-            <div className="flex flex-row gap-6 overflow-x-auto">
+            <div className="flex flex-row gap-6 overflow-x-auto items-center">
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -32,6 +33,7 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
+              <Separator orientation="vertical" className="h-[50%] self-center" />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -39,6 +41,7 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
+              <Separator orientation="vertical" className="h-[50%] self-center" />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
@@ -46,6 +49,7 @@ const Index = ({
                 scoreDefinition="Multiple sources of noise nearby"
                 color="#eab308" /* yellow-500 */
               />
+              <Separator orientation="vertical" className="h-[50%] self-center" />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
