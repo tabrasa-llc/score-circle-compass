@@ -24,13 +24,13 @@ const ChartCard: React.FC<ChartCardProps> = ({
 }) => {
   return (
     <Card className="rounded-xl bg-transparent border-0 p-3 w-full">
-      <div className="flex flex-col items-center">
-        <h3 className="text-lg font-medium text-foreground">{title}</h3>
-        <p className="text-sm text-muted-foreground mb-2 text-center">{subtitle}</p>
-        <div className="w-full max-w-[200px]">
+      <div className="flex flex-col">
+        <h3 className="text-lg font-medium text-foreground text-left">{title}</h3>
+        <p className="text-sm text-muted-foreground mb-2 text-left">{subtitle}</p>
+        <div className="w-full max-w-[200px] mx-auto">
           <GaugeChart value={score} min={min} max={max} color={color} />
         </div>
-        <p className="text-muted-foreground text-center text-sm mt-1 max-w-[200px]">
+        <p className="text-muted-foreground text-left text-sm mt-1 max-w-[200px]">
           {scoreDefinition}
         </p>
       </div>
