@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import GaugeChart from "@/components/GaugeChart";
+import ChartCard from "@/components/ChartCard";
 
 const Index = () => {
   return (
@@ -11,7 +11,32 @@ const Index = () => {
             <CardTitle className="text-foreground">Character</CardTitle>
           </CardHeader>
           <CardContent>
-            <GaugeChart value={4.7} min={1} max={10} />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ChartCard
+                title="Quietness"
+                subtitle="Level of noise nearby."
+                score={4.7}
+                scoreDefinition="Multiple sources of noise nearby"
+              />
+              <ChartCard
+                title="Quietness"
+                subtitle="Level of noise nearby."
+                score={4.7}
+                scoreDefinition="Multiple sources of noise nearby"
+              />
+              <ChartCard
+                title="Quietness"
+                subtitle="Level of noise nearby."
+                score={4.7}
+                scoreDefinition="Multiple sources of noise nearby"
+              />
+              <ChartCard
+                title="Quietness"
+                subtitle="Level of noise nearby."
+                score={4.7}
+                scoreDefinition="Multiple sources of noise nearby"
+              />
+            </div>
           </CardContent>
         </Card>
       </div>
