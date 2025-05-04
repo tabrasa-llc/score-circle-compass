@@ -26,7 +26,7 @@ const ChartCard: React.FC<ChartCardProps> = ({
     <Card className="rounded-xl bg-transparent border border-[#393939] border-[1px] p-4 w-full">
       <div className="flex flex-col items-center">
         <h3 className="text-[20px] font-normal text-foreground">{title}</h3>
-        <p className="text-[14px] font-normal text-muted-foreground mb-2 text-center">{subtitle}</p>
+        <p className="text-[14px] font-light text-muted-foreground mb-2 text-center">{subtitle}</p>
         <div className="w-full max-w-[200px] h-[150px]">
           <GaugeChart value={score} min={min} max={max} color={color} />
         </div>
