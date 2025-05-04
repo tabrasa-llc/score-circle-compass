@@ -54,7 +54,7 @@ const GaugeChart = ({
             paddingAngle={0}
             dataKey="value"
             stroke="none"
-            cornerRadius={10}
+            cornerRadius={0}
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={index === 0 ? "url(#gaugeGradient)" : colors[index]} />
