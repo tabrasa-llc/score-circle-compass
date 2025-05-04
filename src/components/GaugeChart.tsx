@@ -36,7 +36,7 @@ const GaugeChart = ({
   return (
     <div className={cn("w-full h-[130px] relative rounded-lg overflow-hidden", className)}>
       <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
-        <PieChart>
+        <PieChart margin={{ left: 0, right: 0 }}>
           <defs>
             <linearGradient id="gaugeGradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor={color} />
