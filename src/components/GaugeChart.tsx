@@ -57,7 +57,13 @@ const GaugeChart = ({
             cornerRadius={0}
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={index === 0 ? "url(#gaugeGradient)" : colors[index]} />
+              <Cell 
+                key={`cell-${index}`} 
+                fill={index === 0 ? "url(#gaugeGradient)" : colors[index]} 
+                // Add a white stroke only to the filled part of the gauge
+                stroke={index === 0 ? "#FFFFFF" : "none"}
+                strokeWidth={index === 0 ? 2 : 0}
+              />
             ))}
             <Label
               content={({ viewBox }) => {
