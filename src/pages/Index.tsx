@@ -24,7 +24,7 @@ const Index = ({
             </p>
           </CardHeader>
           <CardContent className="pt-6">
-            <div className="flex flex-row gap-8 overflow-x-auto items-center">
+            <div className="flex flex-row gap-12 overflow-x-auto items-center">
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
