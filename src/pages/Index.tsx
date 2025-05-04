@@ -11,17 +11,12 @@ const Index = () => {
         
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle>Performance Rating</CardTitle>
+            <CardTitle>Character</CardTitle>
           </CardHeader>
           <CardContent>
             <GaugeChart value={4.7} min={1} max={10} />
           </CardContent>
         </Card>
-        
-        <div className="mt-6 text-sm text-muted-foreground">
-          <p>This gauge chart displays a performance score on a scale from 1 to 10.</p>
-          <p>The current score is 4.7, showing as a semi-circular gauge with scale markers.</p>
-        </div>
       </div>
     </div>
   );
