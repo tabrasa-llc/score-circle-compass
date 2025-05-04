@@ -7,10 +7,7 @@ const Index = () => {
   return (
     <div className="min-h-screen p-6 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 flex items-center gap-2">
-          <Gauge className="h-7 w-7 text-primary" />
-          <span>Performance Score</span>
-        </h1>
+        
         
         <Card>
           <CardHeader className="pb-2">
