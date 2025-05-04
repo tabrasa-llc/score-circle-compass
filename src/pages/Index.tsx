@@ -33,7 +33,7 @@ const Index = ({
                 color="#eab308" /* yellow-500 */
               />
               <div className="flex items-center h-full">
-                <div className="h-2/3 w-[1px] bg-white"></div>
+                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
               </div>
               <ChartCard
                 title="Quietness"
@@ -43,7 +43,7 @@ const Index = ({
                 color="#eab308" /* yellow-500 */
               />
               <div className="flex items-center h-full">
-                <div className="h-2/3 w-[1px] bg-white"></div>
+                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
               </div>
               <ChartCard
                 title="Quietness"
@@ -53,7 +53,7 @@ const Index = ({
                 color="#eab308" /* yellow-500 */
               />
               <div className="flex items-center h-full">
-                <div className="h-2/3 w-[1px] bg-white"></div>
+                <div className="h-full w-[2px] bg-[#6F6F6F]"></div>
               </div>
               <ChartCard
                 title="Quietness"
