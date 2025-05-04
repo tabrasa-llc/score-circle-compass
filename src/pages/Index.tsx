@@ -48,7 +48,7 @@ const Index = ({
               />
               <ChartCard
                 title="Heritage"
-                subtitle="Presence of Heritage Buildings"
+                subtitle="Presence of heritage buildings"
                 score={6.2}
                 scoreDefinition="Variety of historical buildings nearby"
                 color="#eab308" /* yellow-500 */
