@@ -71,21 +71,21 @@ const Index = ({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
               <ChartCard
                 title="Daycare"
-                subtitle="Quality of daycare facilities"
+                subtitle="Distance to closest daycare."
                 score={7.5}
                 scoreDefinition="Several good options available nearby"
                 color="#a78bfa" /* purple-400 */
               />
               <ChartCard
                 title="Elementary School"
-                subtitle="Quality of elementary education"
+                subtitle="Distance to closest elementary school."
                 score={8.2}
                 scoreDefinition="Highly rated schools in the district"
                 color="#a78bfa" /* purple-400 */
               />
               <ChartCard
                 title="High School"
-                subtitle="Quality of high school education"
+                subtitle="Distance to closest high school."
                 score={6.8}
                 scoreDefinition="Good academic and extracurricular programs"
                 color="#a78bfa" /* purple-400 */
