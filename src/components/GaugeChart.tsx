@@ -32,7 +32,7 @@ const GaugeChart = ({
   const colors = ["url(#gaugeGradient)", "#e2e8f0"];
 
   return (
-    <div className={cn("w-full h-[100px] relative rounded-lg overflow-hidden", className)}>
+    <div className={cn("w-full h-[120px] relative rounded-lg overflow-hidden", className)}>
       <ResponsiveContainer width="100%" height="100%" className="rounded-xl">
         <PieChart>
           <defs>
@@ -47,8 +47,8 @@ const GaugeChart = ({
             cy="70%"
             startAngle={180}
             endAngle={0}
-            innerRadius="87%" // Reduced from 70% (30% smaller)
-            outerRadius="100%" // Reduced from 80% (30% smaller)
+            innerRadius="87%"
+            outerRadius="100%"
             paddingAngle={0}
             dataKey="value"
             stroke="none"
@@ -64,7 +64,7 @@ const GaugeChart = ({
                   <>
                     <text 
                       x={cx} 
-                      y={cy-10} // Moved up 40px 
+                      y={cy-10}
                       textAnchor="middle" 
                       dominantBaseline="central"
                       className="fill-foreground font-bold text-3xl"

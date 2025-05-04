@@ -5,7 +5,7 @@ import ChartCard from "@/components/ChartCard";
 const Index = () => {
   return (
     <div className="min-h-screen p-6 bg-background">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <Card className="bg-card text-foreground">
           <CardHeader className="pb-2">
             <CardTitle className="text-foreground">Character</CardTitle>
