@@ -33,24 +33,24 @@ const Index = ({
                 color="#eab308" /* yellow-500 */
               />
               <ChartCard
-                title="Quietness"
-                subtitle="Level of noise nearby."
-                score={4.7}
-                scoreDefinition="Multiple sources of noise nearby"
+                title="Vibrancy"
+                subtitle="Level of street activity nearby."
+                score={3.2}
+                scoreDefinition="Calm atmosphere most of the day"
                 color="#eab308" /* yellow-500 */
               />
               <ChartCard
-                title="Quietness"
-                subtitle="Level of noise nearby."
-                score={4.7}
-                scoreDefinition="Multiple sources of noise nearby"
+                title="Nightlife"
+                subtitle="Quantity and diversity of bars nearby."
+                score={9.1}
+                scoreDefinition="Variety of bars right on the street"
                 color="#eab308" /* yellow-500 */
               />
               <ChartCard
-                title="Quietness"
-                subtitle="Level of noise nearby."
-                score={4.7}
-                scoreDefinition="Multiple sources of noise nearby"
+                title="Heritage"
+                subtitle="Presence of heritage buildings and building age in the area."
+                score={6.2}
+                scoreDefinition="Vibrant atmosphere at various times of the day"
                 color="#eab308" /* yellow-500 */
               />
             </div>
