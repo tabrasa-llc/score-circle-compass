@@ -14,7 +14,7 @@ const Index = ({
   return (
     <div className="min-h-screen p-6 bg-background">
       <div className="max-w-[1200px] mx-auto">
-        <Card className="bg-card text-foreground">
+        <Card className="bg-card text-foreground border-0">
           <CardHeader className="pb-2">
             <CardTitle className="text-[14px] leading-[18px] text-yellow-500">
               {title}
