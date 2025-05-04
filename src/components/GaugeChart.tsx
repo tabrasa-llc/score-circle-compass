@@ -63,7 +63,7 @@ const GaugeChart = ({
                   <>
                     <text 
                       x={cx} 
-                      y={cy-16} 
+                      y={cy-10} 
                       textAnchor="middle" 
                       dominantBaseline="central"
                       className="fill-foreground font-bold text-3xl"
