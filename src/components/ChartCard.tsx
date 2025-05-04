@@ -10,6 +10,7 @@ interface ChartCardProps {
   max?: number;
   score: number;
   scoreDefinition: string;
+  color?: string;
 }
 
 const ChartCard: React.FC<ChartCardProps> = ({
@@ -19,13 +20,14 @@ const ChartCard: React.FC<ChartCardProps> = ({
   max = 10,
   score,
   scoreDefinition,
+  color,
 }) => {
   return (
-    <Card className="rounded-xl bg-transparent shadow-lg p-4 w-fit">
+    <Card className="rounded-xl bg-transparent p-4 w-fit">
       <div className="flex flex-col items-center">
         <h3 className="text-lg font-medium text-foreground">{title}</h3>
         <p className="text-sm text-muted-foreground mb-4">{subtitle}</p>
-        <GaugeChart value={score} min={min} max={max} />
+        <GaugeChart value={score} min={min} max={max} color={color} />
         <p className="text-muted-foreground text-center text-sm mt-2">
           {scoreDefinition}
         </p>

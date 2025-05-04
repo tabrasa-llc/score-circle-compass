@@ -8,6 +8,7 @@ interface GaugeChartProps {
   min?: number;
   max?: number;
   className?: string;
+  color?: string;
 }
 
 const GaugeChart = ({
@@ -15,6 +16,7 @@ const GaugeChart = ({
   min = 0,
   max = 10,
   className,
+  color = "#9b87f5",
 }: GaugeChartProps) => {
   // Ensure value is within bounds
   const safeValue = Math.min(Math.max(value, min), max);
@@ -29,7 +31,7 @@ const GaugeChart = ({
   ];
 
   // Colors for the gauge segments
-  const colors = ["url(#gaugeGradient)", "#e2e8f0"];
+  const colors = [color, "#e2e8f0"];
 
   return (
     <div className={cn("w-full h-[120px] relative rounded-lg overflow-hidden", className)}>
@@ -37,8 +39,8 @@ const GaugeChart = ({
         <PieChart>
           <defs>
             <linearGradient id="gaugeGradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#9b87f5" />
-              <stop offset="100%" stopColor="#7E69AB" />
+              <stop offset="0%" stopColor={color} />
+              <stop offset="100%" stopColor={color} style={{opacity: 0.7}} />
             </linearGradient>
           </defs>
           <Pie
@@ -55,7 +57,7 @@ const GaugeChart = ({
             cornerRadius={10}
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index]} />
+              <Cell key={`cell-${index}`} fill={index === 0 ? "url(#gaugeGradient)" : colors[index]} />
             ))}
             <Label
               content={({ viewBox }) => {

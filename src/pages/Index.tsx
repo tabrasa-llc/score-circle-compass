@@ -23,31 +23,35 @@ const Index = ({
               {subtitle}
             </p>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-6">
             <div className="flex flex-row gap-6 overflow-x-auto">
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
                 score={4.7}
                 scoreDefinition="Multiple sources of noise nearby"
+                color="#eab308" /* yellow-500 */
               />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
                 score={4.7}
                 scoreDefinition="Multiple sources of noise nearby"
+                color="#eab308" /* yellow-500 */
               />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
                 score={4.7}
                 scoreDefinition="Multiple sources of noise nearby"
+                color="#eab308" /* yellow-500 */
               />
               <ChartCard
                 title="Quietness"
                 subtitle="Level of noise nearby."
                 score={4.7}
                 scoreDefinition="Multiple sources of noise nearby"
+                color="#eab308" /* yellow-500 */
               />
             </div>
           </CardContent>
