@@ -31,7 +31,7 @@ const GaugeChart = ({
   ];
 
   // Colors for the gauge segments
-  const colors = [color, "#e2e8f0"];
+  const colors = [color, "#161616"];
 
   return (
     <div className={cn("w-full h-[130px] relative rounded-lg overflow-hidden", className)}>
